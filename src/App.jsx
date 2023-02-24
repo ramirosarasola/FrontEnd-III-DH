@@ -1,16 +1,12 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import ClassComponent from './components/ClassComponents'
+import PruebaFunc from './components/PruebaFunc'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <ClassComponent/>
-    
+      <PruebaFunc element = "Hello World"/>
     </>
 
   )
