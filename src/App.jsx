@@ -1,12 +1,13 @@
-import { useState } from 'react'
+import { useState } from 'react';
 import './App.css'
-import PruebaFunc from './components/PruebaFunc'
+import Form from './components/Form';
+
 
 
 function App() {
   return (
     <>
-      <PruebaFunc element = "Hello World"/>
+      <Form/>
     </>
 
   )
