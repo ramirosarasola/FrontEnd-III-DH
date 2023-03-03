@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import './Form.css';
 
 const Form = () => {
 
@@ -10,14 +11,9 @@ const Form = () => {
             pokemon: '',
         })
 
-    const [show, setShow] = useState(false)
-
     const handleSubmit = (event) => {
         event.preventDefault()
-        if (user.name.length > 3){ setShow(true)
-        console.log(user.name)}
-        else console.log('Hubo un error')
-        
+        console.log(user)
     }
 
 
@@ -30,7 +26,9 @@ const Form = () => {
     }
 
     return (
-        <div>
+        <div className='formulario'>
+            
+            <h1>Formulario</h1>
 
             <form onSubmit={(event) => handleSubmit(event)}>
 
@@ -49,7 +47,7 @@ const Form = () => {
 
             <h2>Información ingresada</h2>
             <h4>Nombre: {user.name}</h4>
-            <h4>Apellido: {user.apellido}</h4>
+            <h4>Apellido: {user.age}</h4>
             <h4>Pokemon: {user.pokemon}</h4>
 
         </div>
